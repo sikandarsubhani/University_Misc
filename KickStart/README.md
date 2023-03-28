@@ -1,0 +1,2 @@
+# KickStart
+Google Coding Competition
