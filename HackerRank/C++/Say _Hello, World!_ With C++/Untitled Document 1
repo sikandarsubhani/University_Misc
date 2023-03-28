@@ -1,0 +1,11 @@
+//Input and Output
+#include<iostream>
+using namespace std;
+
+int main(){
+int num1{0},num2{0},num3{0},sum{0};
+cin>>num1>>num2>>mum3;
+sum= num1+num2+num3;
+cout<<sum<<endl;
+return 0;
+}
