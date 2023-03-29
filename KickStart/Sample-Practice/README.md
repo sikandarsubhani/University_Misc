@@ -18,8 +18,7 @@ Limits
 Time limit: 40 seconds.
 Memory limit: 1 GB.
 
-
-Sample input: 
+Sample input:
 
 2
 7 3

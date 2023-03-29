@@ -1,40 +1,70 @@
-{%  extends 'layout.html'  %}
-
-{% block help_developer %}
-
-{% endblock %}
-
-
-
-{% block body %}
+{% extends 'layout.html' %} {% block help_developer %} {% endblock %} {% block
+body %}
 <div class="custom_form_center_100vh">
-    <div class="container text-center">
-        <h1> All these routes are available </h1>
+  <div class="container text-center">
+    <h1>All these routes are available</h1>
 
-        <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-            <a href=" {{ url_for('main.index') }} " class="btn btn-secondary"> Home </a>
-            <a href=" {{ url_for('users.login') }} " class="btn btn-secondary"> Login  </a>
-            <a href=" {{ url_for('users.login_parents') }} " class="btn btn-secondary"> Parents Login </a>
-            <a href=" {{ url_for('users.admission') }} " class="btn btn-secondary"> Admission </a>
-            <a href=" {{ url_for('users.apply_parents') }} " class="btn btn-secondary"> Parents Application Form </a>
-            <a href=" {{ url_for('users.apply_teacher') }} " class="btn btn-secondary"> Teacher Application Form </a>
-            <a href=" {{ url_for('main.about') }} " class="btn btn-secondary"> About </a>
-        </div>
-
-        <br>
-
-        <div class="btn-group btn-group-sm mt-3" role="group" aria-label="Small button group">
-            <a href=" {{ url_for('exam.addexam') }} " class="btn btn-secondary"> 
-                Add Exam 
-            </a>
-
-            <a href=" {{ url_for('exam.addexam_subject') }} " class="btn btn-secondary"> 
-                Add Exam Subject 
-            </a>
-            <a href=" {{ url_for('exam.addexam_student_result') }} " class="btn btn-secondary"> 
-                Add Student Result 
-            </a>
-        </div>
+    <div
+      class="btn-group btn-group-sm"
+      role="group"
+      aria-label="Small button group"
+    >
+      <a href=" {{ url_for('main.index') }} " class="btn btn-secondary">
+        Home
+      </a>
+      <a href=" {{ url_for('users.login') }} " class="btn btn-secondary">
+        Login
+      </a>
+      <a
+        href=" {{ url_for('users.login_parents') }} "
+        class="btn btn-secondary"
+      >
+        Parents Login
+      </a>
+      <a href=" {{ url_for('users.admission') }} " class="btn btn-secondary">
+        Admission
+      </a>
+      <a
+        href=" {{ url_for('users.apply_parents') }} "
+        class="btn btn-secondary"
+      >
+        Parents Application Form
+      </a>
+      <a
+        href=" {{ url_for('users.apply_teacher') }} "
+        class="btn btn-secondary"
+      >
+        Teacher Application Form
+      </a>
+      <a href=" {{ url_for('main.about') }} " class="btn btn-secondary">
+        About
+      </a>
     </div>
+
+    <br />
+
+    <div
+      class="btn-group btn-group-sm mt-3"
+      role="group"
+      aria-label="Small button group"
+    >
+      <a href=" {{ url_for('exam.addexam') }} " class="btn btn-secondary">
+        Add Exam
+      </a>
+
+      <a
+        href=" {{ url_for('exam.addexam_subject') }} "
+        class="btn btn-secondary"
+      >
+        Add Exam Subject
+      </a>
+      <a
+        href=" {{ url_for('exam.addexam_student_result') }} "
+        class="btn btn-secondary"
+      >
+        Add Student Result
+      </a>
+    </div>
+  </div>
 </div>
 {% endblock %}
